@@ -12,23 +12,50 @@
 // It should also return false if the function is given
 // bad input.
 
-var getSeasonForMonth=function(number) {
-  if (number > 12){
-      return false
-  } else if (number < 1){
-      return false
-  } else if  (typeof number !== typeof 3){
-      return false
-  } else if (number === 1 || number ===2 || number===12 || number===11){
-      return "winter"
-  } else if (number ===  3 || number===4 || number===5){
-      return "spring"
+
+
+
+
+
+
+
+
+
+var getSeasonForMonth= function (number){
+  if (number <= 0 || number > 12) {
+    return false
+  } else if (typeof number !== typeof 1){
+    return false
+  } else if (number ===1 || number===2 || number===12|| number===11){
+    return "winter"
+  }else if (number ===  3 || number===4 || number===5){
+    return "spring"
   } else if (number === 6 || number===7 || number===8){
-      return "summer"
+    return "summer"
   } else if (number === 9 || number===10){
-      return "fall"
+    return "fall"
   }
 }
+
+
+//
+// var getSeasonForMonth=function(number) {
+//   if (number > 12){
+//       return false
+//   } else if (number < 1){
+//       return false
+//   } else if  (typeof number !== typeof 3){
+//       return false
+//   } else if (number === 1 || number ===2 || number===12 || number===11){
+//       return "winter"
+//   } else if (number ===  3 || number===4 || number===5){
+//       return "spring"
+//   } else if (number === 6 || number===7 || number===8){
+//       return "summer"
+//   } else if (number === 9 || number===10){
+//       return "fall"
+//   }
+// }
 
 //*-*~*~*~*~*~ Don't Touch *~*~*~*~*~*~*~*
 

@@ -9,16 +9,57 @@
 
 //*-*~*~*~*~*~ Don't Touch *~*~*~*~*~*~*~*
 
-var robustSum= function(num1, num2) {
-  if (typeof num1 !== typeof 5) {
+
+var robustSum=function(num1, num2){
+  if (typeof num1 !== typeof 3 || typeof num2 !== typeof 3){
     return false
-  } else if (typeof num2 !== typeof 5) {
-    return false
-}  else {
-    var result= num1 + num2
-    return result
+  } else {
+    return num1+num2
+  }
 }
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// var robustSum= function(num1, num2){
+//   if (typeof num1 !==typeof 3 || typeof num2 !== typeof 3){
+//     return false
+//   } else {
+//     return num1+num2
+//   }
+//
+// }
+
+
+
+
+
+
+
+
+// var robustSum= function(num1, num2) {
+//   if (typeof num1 !== typeof 5) {
+//     return false
+//   } else if (typeof num2 !== typeof 5) {
+//     return false
+// }  else {
+//     var result= num1 + num2
+//     return result
+// }
+// }
 
 // (var result= num1 + num2) {
 //   return result);

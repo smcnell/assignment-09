@@ -5,10 +5,38 @@
 // repeating yourself, use your sum function inside
 // of your average function.
 
-var getAverage= function(num1, num2){
-  var result= (num1 + num2)/2;
-  return result;
+
+var getAverage=function(num1, num2){
+  var add=num1 + num2;
+  var divide= add/2;
+  return divide
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// var getAverage= function(num1, num2){
+//   var result= (num1 + num2)/2;
+//   return result;
+// }
+
 
 
 

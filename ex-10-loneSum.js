@@ -6,19 +6,54 @@
 // it does not count towards the sum.
 
 
-
-
-var loneSum=function(val1, val2, val3){
-    if (val1=== val2 && val1===val3) {
-      return 0
-  } if (val1 === val3){
-      return val2
-  } if (val2 ===val3){
-      return val1
-  } else {
-      return val1 + val2 + val3
-  }
+var loneSum= function(num1, num2, num3){
+if (num1 ==num2 && num3){
+  return 0}
+  if(num1=== num2){
+num1=0;
+return num3
+} if (num2===num3){
+  num2=0;
+  return num1
+} if (num1===num3){
+  num1=0;
+  return num2;
+} else {
+  return num1 + num2 + num3
 }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// var loneSum=function(val1, val2, val3){
+//     if (val1=== val2 && val1===val3) {
+//       return 0
+//   } if (val1 === val3){
+//       return val2
+//   } if (val2 ===val3){
+//       return val1
+//   } else {
+//       return val1 + val2 + val3
+//   }
+// }
 
 
 

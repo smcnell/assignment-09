@@ -22,26 +22,80 @@
 //  => 150
 
 
-var calcSpeedTicket= function(speedLimit, clockedSpeed, bool){
-  var ticket = 0;
-  if (clockedSpeed- speedLimit < 5) {
-    return ticket
+
+
+var calcSpeedTicket=function(speedLimit, speed, boolean){
+  if (speed < speedLimit + 5){
+    return 0
   }
-  else if (clockedSpeed- speedLimit < 20) {
-    ticket = 150;
-    if (bool===true){
-      ticket=ticket*2
-    }
-    return ticket
+  if (speed > speedLimit + 20 && boolean===false){
+    return 250
   }
-  else if (clockedSpeed- speedLimit >= 20) {
-    ticket = 250;
-    if (bool===true){
-      ticket=ticket*2
-    }
-    return ticket
+  if (speed > speedLimit + 20 && boolean===true){
+    return 500
   }
+if (speed > speedLimit + 5 && boolean===false){
+  return 150
 }
+if (speed > speedLimit + 5 && boolean===true){
+  return 300
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// var calcSpeedTicket= function(speedLimit, clockedSpeed, boolean){
+//   var ticketCost= 0;
+//
+//   if (clockedSpeed <speedLimit + 5){
+//     ticketCost=0;
+//   } else if (clockedSpeed < speedLimit + 20){
+//     ticketCost= 150;
+//   } else if (clockedSpeed > speedLimit + 20){
+//     ticketCost= 250;
+//   } if (boolean===false) {
+//   return ticketCost
+// } else {
+//   return ticketCost*2
+// }
+//
+// }
+
+
+
+// *******
+// var calcSpeedTicket= function(speedLimit, clockedSpeed, bool){
+//   var ticket = 0;
+//   if (clockedSpeed- speedLimit < 5) {
+//     return ticket
+//   }
+//   else if (clockedSpeed- speedLimit < 20) {
+//     ticket = 150;
+//     if (bool===true){
+//       ticket=ticket*2
+//     }
+//     return ticket
+//   }
+//   else if (clockedSpeed- speedLimit >= 20) {
+//     ticket = 250;
+//     if (bool===true){
+//       ticket=ticket*2
+//     }
+//     return ticket
+//   }
+// }
 
 
 

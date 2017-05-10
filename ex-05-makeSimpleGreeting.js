@@ -14,13 +14,38 @@
  *    Ex: makeSimpleGreeting('Janet', false) //=> "Hello there, Janet!"
  */
 
-var makeSimpleGreeting = function(username, boolean){
-  if (boolean === true){
-    return  "Welcome back, " + username + "."
+
+var makeSimpleGreeting= function(string, boolean){
+  if (boolean===true){
+    return "Welcome back, " + string + "."
   } else {
-    return "Hello there, " + username + "!"
+    return "Hello there, " + string + "!"
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// var makeSimpleGreeting= function(inputName, inputBoolean){
+//   var outputString= ""
+//
+//   if (inputBoolean===true){
+//     outputString= "Welcome back, " + inputName + "."
+//   } else {
+//     outputString= "Hello there, " + inputName + "!"
+//   } return outputString
+// }
 
 
 //*-*~*~*~*~*~ Don't Touch *~*~*~*~*~*~*~*

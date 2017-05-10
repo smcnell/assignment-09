@@ -6,24 +6,46 @@
 // boolean operators, or both (but not neither).
 
 
+
+
 var getMinimum= function(num1, num2, num3, num4){
-if (num1 < num2 && num3 && num4) {
-  return num1
+  var lowest= 0
+  if (num1 < num2 && num3 && num4){
+    lowest= num1
+  } else if (num2 < num3 && num4 && num1){
+    lowest= num2
+  } else if (num3 < num4 && num1 && num2){
+    lowest=num3
+  } else if (num4 < num1 && num2 && num3){
+    lowest= num4
+  } return lowest
 }
 
-if (num2 < num3 && num4 && num1) {
-  return num2
-}
 
-if (num3 < num4 && num1 && num2) {
-  return num3
-}
 
-if (num4 < num1 && num2 && num3) {
-  return num4
-}
 
-}
+
+
+
+// ******
+// var getMinimum= function(num1, num2, num3, num4){
+// if (num1 < num2 && num3 && num4) {
+//   return num1
+// }
+//
+// if (num2 < num3 && num4 && num1) {
+//   return num2
+// }
+//
+// if (num3 < num4 && num1 && num2) {
+//   return num3
+// }
+//
+// if (num4 < num1 && num2 && num3) {
+//   return num4
+// }
+//
+// }
 
 //   if (num1 < num2) {
 //     return num1

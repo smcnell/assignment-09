@@ -14,9 +14,30 @@
 
 
 var simpleSum= function(num1, num2){
-  var result= num1 + num2;
-  return result;
+  var add=num1 + num2;
+  return add;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// var simpleSum= function (num1, num2){
+//   var sum= num1+ num2;
+//   return sum;
+// }
+
 
 console.assert( simpleSum(8, 11) === 19 );
 console.assert( simpleSum(4, 101) === 105 );

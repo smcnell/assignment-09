@@ -10,10 +10,30 @@
 
 // DEMO
 // YOU, the student, will write the function
-function addMoreEnthusiam(inputTxt){
-	var inputWithEnthusiasm = inputTxt + "!!!"
-   return inputWithEnthusiasm
+
+
+
+var addMoreEnthusiam=function(inputString){
+var excited= inputString+ "!!!"
+return excited
 }
+
+
+
+
+
+
+
+
+
+
+
+// var addMoreEnthusiam=function(inputString){
+// 	var wooo= inputString + "!!!"
+// 	return wooo
+// }
+
+
 
 
 

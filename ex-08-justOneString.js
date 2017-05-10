@@ -10,23 +10,72 @@
 //*-*~*~*~*~*~ Don't Touch *~*~*~*~*~*~*~*
 
 
-var justOneString= function (input1, input2){
-
-  if (typeof input1 === "string" && typeof input2 === "string"){
-
-    return false
-  } else if (typeof input2 === typeof "string" ) {
-
-    return true
-
-  } else if(typeof input1 === "string" ) {
-
-    return true
-
-  } else {
-    return false
-  }
+var justOneString= function(stringish1, stringish2){
+if (typeof stringish1==="string" && typeof stringish2==="string"){
+  return false
+} if (typeof stringish1 === "string"){
+  return true
+} if (typeof stringish2 === "string"){
+  return true
+} else {
+  return false
 }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// var justOneString= function(input1, input2){
+//   if (typeof input1=== typeof "string" && typeof input2===typeof "string"){
+//     return false
+//   }else if (typeof input1=== typeof "string" || typeof input2===typeof "string"){
+//     return true
+//   } else {
+//     return false
+//   }
+//
+//
+// }
+
+
+
+
+
+
+
+
+// var justOneString= function (input1, input2){
+//
+//   if (typeof input1 === "string" && typeof input2 === "string"){
+//
+//     return false
+//   } else if (typeof input2 === typeof "string" ) {
+//
+//     return true
+//
+//   } else if(typeof input1 === "string" ) {
+//
+//     return true
+//
+//   } else {
+//     return false
+//   }
+// }
 
 
 // var justOneString= function (input1, input2){
